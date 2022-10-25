@@ -1,0 +1,12 @@
+[
+    {"id": 1, "nombre": "Pantalon", "precio": 1000, "imagen":"../img/pantalonhombre.jpg"},   
+    {"id": 2, "nombre": "Remera", "precio": 700, "imagen":"../img/remera negra.jpg"},    
+    {"id": 3, "nombre": "Zapatillas", "precio": 20000, "imagen":"../img/zapaMujer.jpg" },
+    {"id": 4, "nombre": "Buzo", "precio": 1700, "imagen":"../img/buzodama.jpg" },
+    {"id": 5, "nombre": "Campera", "precio": 1700, "imagen": "../img/campera hombre.webp"},
+    {"id": 6, "nombre": "Zapatillas", "precio": 1700, "imagen":"../img/zapatillasNike.jpg" },
+    {"id": 7, "nombre": "Vestido", "precio": 1700, "imagen":"../img/vestidomuj.jpg" },
+    {"id": 8, "nombre": "Buzo Hombre", "precio": 1700, "imagen":"../img/buzohomb.jpg"},
+    {"id": 9, "nombre": "Campera Nike", "precio": 1700, "imagen":"../img/camperaNike.jpg" }
+    
+]

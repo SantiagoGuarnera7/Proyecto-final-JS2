@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/logo.png">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Indumentaria Emma - Productos</title>
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <h1>Indumentaria Emma 💖</h1>
+    </div>
+    <div class="contenedor_menu">
+      <nav class="navbar navbar-expand-lg bg-black bg-opacity-25 nav">
+        <div class="container-fluid menu">
+          <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item menu_estilo">
+                <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Ayuda</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button id="toggleMyModal" type="button" class="btn btn-warning" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          Ver Carrito<i class="bi bi-bag-check-fill"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Total</th>
+                  <th></th>>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="6">El Carrito esta vacío - Comienza a Comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="row" id="cards"></div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="terminarCompra">Terminar compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+
+  <section class="d-flex justify-content-center mt-5">
+    <article class="container">
+      <div id="contenedor-productos" class="row row-cols-1 row-cols-md-3 g-4 ">
+      </div>
+    </article>
+  </section>
+
+  <!-- Comienza Footer -->
+  <footer class=footer-contenedor>
+    <p><img class="img-footer" src="./img/maps.png" alt="maps">Campana 642, Flores</p>
+    <p><img class="img-footer" src="./img/wp.png" alt="wp">1161537693</p>
+    <nav class="pie">
+      <ul class="redes">
+        <li><a href="http://instagram.com" target="_blank"><img class="img-footer" src="./img/Instagram.ico"
+              alt="instagram"></a></li>
+        <li><a href="http://facebook.com" target="_blank"><img class="img-footer" src="./img/Facebook.ico"
+              alt="facebook"></a></li>
+        <li><a href="http://gmail.com" target="_blank"><img class="img-footer" src="./img/gmail.ico" alt="gmail"></a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script defer src="../js/index.js"></script>
+</body>
+
+</html>
